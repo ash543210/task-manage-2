@@ -8,6 +8,17 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+// const func = async () => {
+//   const result = await fetch(
+//     "https://app.netlify.com/teams/api/v1/accounts/ash543210",
+//     { method: "GET", mode: "cors" }
+//   );
+//   const data = await result.json();
+//   console.log(data);
+// };
+
+// func();
+
 mongoose
   .connect(
     "mongodb+srv://ash54321:taGpWfeSyhuXfFgW@cluster0.si5umyq.mongodb.net/?retryWrites=true&w=majority"
